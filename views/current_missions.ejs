@@ -10,25 +10,30 @@
 </head>
 
 <body>
-    <h1>Today's missions</h1>
-    <!-- <ul>
-        <% todos.forEach( el=> { %>
-            <li class='todoItem' data-id='<%=el._id%>'>
-                <span class='<%= el.completed === true ? ' completed' : 'not' %>'><%= el.todo %></span>
+    <div class="container">
+        <main>
+            <h1>Today's missions</h1>
+            <!-- <ul>
+                <% todos.forEach( el=> { %>
+                    <li class='todoItem' data-id='<%=el._id%>'>
+                        <span class='<%= el.completed === true ? ' completed' : 'not' %>'><%= el.todo %></span>
                 <span class='del'> Delete </span>
             </li>
             <% }) %>
-    </ul>
-
-    <h2>
-        <%= user.userName %> has <%= left %> things left to do.
-    </h2>
--->
-<a href="/welcome"> Current Homepage</a> <!-- go to welcome page -->
-<a href="/create"> Create mission</a> <!-- go to task creating page -->
-<a href="/logout">Logout</a>
-
+        </ul>
+        
+        <h2>
+            <%= user.userName %> has <%= left %> things left to do.
+        </h2>
+    -->
+    <a href="/welcome"> Current Homepage</a> <!-- go to welcome page -->
+    <a href="/create"> Create mission</a> <!-- go to task creating page -->
+    <a href="/logout" class="btn-secondary">Logout</a>
+    
     <script src="js/main.js"></script>
+    
+        </main>
+    </div>
 </body>
 
 </html>
