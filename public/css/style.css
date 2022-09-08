@@ -296,6 +296,7 @@ input, .input-field {
     min-width: 450px;
     max-width: 700px;
     text-align: center;
+    box-shadow: var(--box-shadow);
 }
 
 .todoItem {
