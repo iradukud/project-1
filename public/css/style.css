@@ -188,8 +188,8 @@ input[type="text"] {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
 }
 
 h1{
@@ -283,6 +283,44 @@ input, .input-field {
     padding-bottom: 0.85em;
     padding-left: 0.85em;
     border-radius: 0.5em;
+}
+
+/* TASKS LIST */
+
+.todo_ul {
+    background-color: var(--clr-accent-500);
+    color: var(--clr-neutral-100);
+    /* border: 1px solid black; */
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    min-width: 450px;
+    max-width: 700px;
+    text-align: center;
+}
+
+.todoItem {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin-bottom: .5em;
+}
+
+.del {
+    background-color: var(--clr-danger);
+    color: var(--clr-accent-100);
+    font-weight: var(--fw-bold);
+    border-radius: 35px;
+    padding: 0 12px 0 12px;
+    height: fit-content;
+}
+
+.todo_task {
+    font-weight: var(--fw-medium);
+    text-decoration: none;
+    max-width: 80%;
+    word-wrap: break-word;
+    text-align: start;
 }
 
 @media (max-width: 50em) {
