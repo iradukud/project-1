@@ -314,6 +314,10 @@ input, .input-field {
     padding: 0 12px 0 12px;
     height: fit-content;
 }
+.del:hover {
+    background-color: #d61c08;
+    cursor: pointer;
+}
 
 .todo_task {
     font-weight: var(--fw-medium);
@@ -321,6 +325,9 @@ input, .input-field {
     max-width: 80%;
     word-wrap: break-word;
     text-align: start;
+}
+.todo_task:hover {
+    cursor: pointer;
 }
 
 @media (max-width: 50em) {
